@@ -1,0 +1,31 @@
+generated: '2026-10-13'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io)
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (exlibrisgroup.com,
+  security/ex-libris-domain-security.yml) or its accepted GitHub org.'
+packages:
+- name: exlibris
+  registry: npm
+  url: https://www.npmjs.com/package/exlibris
+  language: JavaScript
+  official: true
+  version: 1.0.5
+  published: '2020-01-06'
+  evidence: metadata names exlibrisgroup.com
+- name: exlibris
+  registry: pypi
+  url: https://pypi.org/project/exlibris/
+  language: Python
+  official: false
+  version: 0.5.0
+  published: '2025-07-25'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
+- name: exlibris
+  registry: rubygems
+  url: https://rubygems.org/gems/exlibris
+  language: Ruby
+  official: false
+  version: 0.1.1
+  published: '2019-07-19'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'

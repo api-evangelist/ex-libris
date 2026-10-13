@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/ex-libris/main/json-schema/ex-libris-get-almaws-version-resource-name-parameters-response-schema.json",
+  "title": "GetAlmawsVersionResourceNameParametersResponse",
+  "x-generated": "2026-10-13",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/ex-libris-openapi-generated.yml#/components/schemas/GetAlmawsVersionResourceNameParametersResponse",
+  "type": "object",
+  "properties": {
+    "errorsExist": {
+      "type": "boolean"
+    },
+    "errorList": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "errorCode": {
+                "type": "string"
+              },
+              "errorMessage": {
+                "type": "string"
+              },
+              "trackingId": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "result": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

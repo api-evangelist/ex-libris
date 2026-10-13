@@ -1,0 +1,4 @@
+{
+  "issuer": "https://developers.exlibrisgroup.com",
+  "jwks_uri": "https://developers.exlibrisgroup.com/wp-content/plugins/exl-devnetwork/inc/jwks.json"
+}

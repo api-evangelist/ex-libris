@@ -1,0 +1,977 @@
+openapi: 3.1.0
+info:
+  title: Ex Libris API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 44 operation(s) read from 8 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Ex Libris has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: 42
+    pages-with-code: 3
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developers.exlibrisgroup.com/alma/apis
+  - https://developers.exlibrisgroup.com/primo/apis
+  - https://developers.exlibrisgroup.com/esploro/apis
+  - https://developers.exlibrisgroup.com/alma/apis/courses
+  - https://developers.exlibrisgroup.com/rapido/apis/resources
+  - https://developers.exlibrisgroup.com/rapido/apis/users
+  - https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+  - https://developers.exlibrisgroup.com/rapido/apis/partners
+servers:
+- url: https://gateway-hostname
+paths:
+  /almaws/v1/courses:
+    get:
+      operationId: get_almaws_v1_courses
+      tags:
+      - Almaws
+      summary: Retrieve Courses
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_almaws_v1_courses
+      tags:
+      - Almaws
+      summary: Add a new Course
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}:
+    delete:
+      operationId: delete_almaws_v1_courses_courseId
+      tags:
+      - Almaws
+      summary: Remove Course
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_almaws_v1_courses_courseId
+      tags:
+      - Almaws
+      summary: Retrieve Course
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_almaws_v1_courses_courseId
+      tags:
+      - Almaws
+      summary: Enroll to course
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_almaws_v1_courses_courseId
+      tags:
+      - Almaws
+      summary: Update Course
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/lists/{listId}:
+    delete:
+      operationId: delete_almaws_v1_courses_courseId_lists_listId
+      tags:
+      - Almaws
+      summary: Delete Course Enrollment
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: listId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/reading-lists:
+    post:
+      operationId: post_almaws_v1_courses_courseId_reading_lists
+      tags:
+      - Almaws
+      summary: Create a Reading List
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/reading-lists/{readingListId}:
+    delete:
+      operationId: delete_almaws_v1_courses_courseId_reading_lists_readingListId
+      tags:
+      - Almaws
+      summary: Remove Reading List
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_almaws_v1_courses_courseId_reading_lists_readingListId
+      tags:
+      - Almaws
+      summary: Retrieve a Reading List
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_almaws_v1_courses_courseId_reading_lists_readingListId
+      tags:
+      - Almaws
+      summary: Update a Reading List
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/reading-lists/{readingListId}/citations/{citationId}:
+    delete:
+      operationId: delete_almaws_v1_courses_courseId_reading_lists_readingListId_citations_citation
+      tags:
+      - Almaws
+      summary: Remove Citation
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: citationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_almaws_v1_courses_courseId_reading_lists_readingListId_citations_citationId
+      tags:
+      - Almaws
+      summary: Retrieve Citation
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: citationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_almaws_v1_courses_courseId_reading_lists_readingListId_citations_citationId
+      tags:
+      - Almaws
+      summary: Remove file from citation
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: citationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_almaws_v1_courses_courseId_reading_lists_readingListId_citations_citationId
+      tags:
+      - Almaws
+      summary: Update Citation
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: citationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/reading-lists/{readingListId}/citations/{citationId}/tags:
+    get:
+      operationId: get_almaws_v1_courses_courseId_reading_lists_readingListId_citations_citationId_
+      tags:
+      - Almaws
+      summary: Retrieves Tags
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: citationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_almaws_v1_courses_courseId_reading_lists_readingListId_citations_citationId_
+      tags:
+      - Almaws
+      summary: Update Tags
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: citationId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/reading-lists/{readingListId}/owners/{primaryId}:
+    delete:
+      operationId: delete_almaws_v1_courses_courseId_reading_lists_readingListId_owners_primaryId
+      tags:
+      - Almaws
+      summary: Delete Owner
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: primaryId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_almaws_v1_courses_courseId_reading_lists_readingListId_owners_primaryId
+      tags:
+      - Almaws
+      summary: Retrieve Owner
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: primaryId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_almaws_v1_courses_courseId_reading_lists_readingListId_owners_primaryId
+      tags:
+      - Almaws
+      summary: Update Owner
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: primaryId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/reading-lists/{readingListId}/{id}:
+    get:
+      operationId: get_almaws_v1_courses_courseId_reading_lists_readingListId_id
+      tags:
+      - Almaws
+      summary: Retrieve Citations
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at id
+    post:
+      operationId: post_almaws_v1_courses_courseId_reading_lists_readingListId_id
+      tags:
+      - Almaws
+      summary: Create Citation
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: readingListId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at id
+  /almaws/v1/courses/{courseId}/users/{userId}:
+    delete:
+      operationId: delete_almaws_v1_courses_courseId_users_userId
+      tags:
+      - Almaws
+      summary: Delete Course Enrollment
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /almaws/v1/courses/{courseId}/{id}:
+    get:
+      operationId: get_almaws_v1_courses_courseId_id
+      tags:
+      - Almaws
+      summary: Retrieve Reading Lists
+      x-source: https://developers.exlibrisgroup.com/alma/apis/courses
+      parameters:
+      - name: courseId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at id
+  /almaws/version/resource-name/parameters:
+    get:
+      operationId: get_almaws_version_resource_name_parameters
+      tags:
+      - Almaws
+      summary: GET /almaws/version/resource-name/parameters
+      x-source: https://developers.exlibrisgroup.com/alma/apis
+      parameters:
+      - name: additional_parameter
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetAlmawsVersionResourceNameParametersResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: curl. Note that only GET requests are permitted in the guest sandbox. About the Alma REST APIs To learn about the structure of
+          Alma REST APIs, see the article “ How We’re Building APIs at Ex Libris “. Structure of the REST URIs The Alma RESTful API provides access
+          to resources (data entities) via URI paths. To use a REST API, your application will make an HTTP request and parse the response. The
+          s
+  /rapido/v1/lendingRequests/{requestId}:
+    get:
+      operationId: get_rapido_v1_lendingRequests_requestId
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests.
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_rapido_v1_lendingRequests_requestId
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests.
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_rapido_v1_lendingRequests_requestId
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests.
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/partner/test:
+    post:
+      operationId: post_rapido_v1_partner_test
+      tags:
+      - Rapido
+      summary: Test API Path POST Partner Test API
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/partner/{partnerCode}:
+    delete:
+      operationId: delete_rapido_v1_partner_partnerCode
+      tags:
+      - Rapido
+      summary: Remove Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: partnerCode
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_rapido_v1_partner_partnerCode
+      tags:
+      - Rapido
+      summary: Retrieve Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: partnerCode
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_rapido_v1_partner_partnerCode
+      tags:
+      - Rapido
+      summary: Update Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: partnerCode
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/resources/test:
+    get:
+      operationId: get_rapido_v1_resources_test
+      tags:
+      - Rapido
+      summary: Test API
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/resources
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/resources/{recordId}/offers:
+    get:
+      operationId: get_rapido_v1_resources_recordId_offers
+      tags:
+      - Rapido
+      summary: Retrieve Offers
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/resources
+      parameters:
+      - name: recordId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/user/{userId}:
+    delete:
+      operationId: delete_rapido_v1_user_userId
+      tags:
+      - Rapido
+      summary: Delete user
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_rapido_v1_user_userId
+      tags:
+      - Rapido
+      summary: Get user details
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_rapido_v1_user_userId
+      tags:
+      - Rapido
+      summary: Update User Details
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/user/{userId}/resource-sharing-requests:
+    get:
+      operationId: get_rapido_v1_user_userId_resource_sharing_requests
+      tags:
+      - Rapido
+      summary: Retrieve user Rapido resource sharing requests
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_rapido_v1_user_userId_resource_sharing_requests
+      tags:
+      - Rapido
+      summary: Create Rapido resource sharing request for user
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/user/{userId}/resource-sharing-requests/{requestId}:
+    delete:
+      operationId: delete_rapido_v1_user_userId_resource_sharing_requests_requestId
+      tags:
+      - Rapido
+      summary: Cancel user's Rapido resource sharing request
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_rapido_v1_user_userId_resource_sharing_requests_requestId
+      tags:
+      - Rapido
+      summary: Retrieve user's Rapido resource sharing request
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_rapido_v1_user_userId_resource_sharing_requests_requestId
+      tags:
+      - Rapido
+      summary: Operation on Rapido request for resource sharing
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/{v1id}:
+    get:
+      operationId: get_rapido_v1_v1id
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests.
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at v1Id
+    post:
+      operationId: post_rapido_v1_v1id
+      tags:
+      - Rapido
+      summary: Create Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at v1Id
+components:
+  schemas:
+    GetAlmawsVersionResourceNameParametersResponse:
+      type: object
+      properties:
+        errorsExist:
+          type: boolean
+        errorList:
+          type: object
+          properties:
+            error:
+              type: array
+              items:
+                type: object
+                properties:
+                  errorCode:
+                    type: string
+                  errorMessage:
+                    type: string
+                  trackingId:
+                    type: string
+        result:
+          type:
+          - string
+          - 'null'
+tags:
+- name: Almaws
+- name: Rapido

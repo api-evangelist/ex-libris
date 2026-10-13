@@ -1,23 +1,108 @@
 aid: ex-libris
+
 name: Ex Libris
-description: 'Ex Libris is a company surfaced via the API Evangelist harvest backlog (source: tag-qc)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://exlibrisgroup.com/wp-content/uploads/ExLibris-logo-endorsed-color.png
+
+description: Ex Libris provides library software and services for academic, research, and public libraries worldwide. Their portfolio includes
+  Alma, Primo, Leganto, and other platforms that enable resource management, discovery, and digital services. The company focuses on integrated
+  solutions for metadata, analytics, and collaborative networks, serving institutions of all sizes with cloud‑based and on‑premise options.
+
 url: https://raw.githubusercontent.com/api-evangelist/ex-libris/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
-- Company
-apis: []
+- Library
+- Software
+- Academic
+- Cloud
+- Solutions
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/ex-libris-rules.yml
+- type: JSONLD
+  url: json-ld/ex-libris-context.jsonld
+- type: Vocabulary
+  url: vocabulary/ex-libris-vocabulary.yml
+- type: DataModel
+  url: data-model/ex-libris-data-model.yml
+- type: Conformance
+  url: conformance/ex-libris-conformance.yml
+- type: SecurityTxt
+  url: well-known/ex-libris-knowledge-security.txt
+- type: WellKnown
+  url: well-known/ex-libris-well-known.yml
+- type: Hosts
+  url: hosts/ex-libris-hosts.yml
+- type: Vendors
+  url: vendors/ex-libris-vendors.yml
+- type: SDKs
+  url: packages/ex-libris-packages.yml
+- type: Packages
+  url: packages/ex-libris-packages.yml
+- type: TrustCenter
+  url: https://trust.exlibrisgroup.com/
+- type: TermsOfService
+  url: https://developers.exlibrisgroup.com/about/terms
+- type: StatusPage
+  url: https://status.exlibrisgroup.com/system_status
+- type: Security
+  url: https://knowledge.exlibrisgroup.com/Cross-Product/Security/GDPR
+- type: GitHubOrganization
+  url: https://github.com/ExLibrisGroup
+- type: Blog
+  url: https://exlibrisgroup.com/blog/
+- type: Documentation
+  url: https://developers.exlibrisgroup.com/
+- type: DomainSecurity
+  url: security/ex-libris-domain-security.yml
 - type: Website
   url: https://www.exlibrisgroup.com
+
+apis:
+- aid: ex-libris:ex-libris-api
+  name: Ex Libris API
+  description: 'Ex Libris API as documented publicly: 44 operations. Contract generated from the documentation by API Evangelist (2026-10-13);
+    not the provider''s own document.'
+  humanURL: https://developers.exlibrisgroup.com/alma/apis
+  baseURL: https://gateway-hostname
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/ex-libris-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/ex-libris-get-almaws-version-resource-name-parameters-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The developer portal provides HTML documentation but no machine‑readable OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL contracts were found.
+  evidence:
+  - url: https://developers.exlibrisgroup.com/
+    status: 200
+  checked: '2026-10-13'
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 20
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
