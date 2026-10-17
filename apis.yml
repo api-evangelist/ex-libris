@@ -79,19 +79,30 @@ common:
   url: https://www.exlibrisgroup.com
 
 apis:
-- aid: ex-libris:ex-libris-api
-  name: Ex Libris API
-  description: 'Ex Libris API as documented publicly: 44 operations. Contract generated from the documentation by API Evangelist (2026-10-13);
-    not the provider''s own document.'
+- aid: ex-libris:ex-libris-almaws-api
+  name: Ex Libris Almaws API
+  description: The Almaws API from Ex Libris — 12 operation(s) for almaws.
   humanURL: https://developers.exlibrisgroup.com/alma/apis
   baseURL: https://gateway-hostname
+  tags:
+  - Almaws
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/ex-libris-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/ex-libris-almaws-api-openapi.yml
   - type: JSONSchema
     url: json-schema/ex-libris-get-almaws-version-resource-name-parameters-response-schema.json
-
+- aid: ex-libris:ex-libris-rapido-api
+  name: Ex Libris Rapido API
+  description: The Rapido API from Ex Libris — 9 operation(s) for rapido.
+  humanURL: https://developers.exlibrisgroup.com/alma/apis
+  baseURL: https://gateway-hostname
+  tags:
+  - Rapido
+  properties:
+  - type: OpenAPI
+    url: openapi/ex-libris-rapido-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ex-libris-get-almaws-version-resource-name-parameters-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

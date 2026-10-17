@@ -1,0 +1,19 @@
+{
+  "provider": "ex-libris",
+  "sources": [
+    "_ae-authored/ex-libris-openapi-generated.yml"
+  ],
+  "outputs": [
+    "ex-libris-almaws-api-openapi.yml",
+    "ex-libris-rapido-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "ex-libris-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+2 apis, 2 total)"
+  ],
+  "skipped": []
+}

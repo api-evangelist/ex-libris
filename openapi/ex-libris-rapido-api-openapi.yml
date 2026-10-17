@@ -1,0 +1,367 @@
+openapi: 3.2.0
+info:
+  title: Ex Libris Rapido API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 44 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Ex Libris has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: 42
+    pages-with-code: 3
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developers.exlibrisgroup.com/alma/apis
+  - https://developers.exlibrisgroup.com/primo/apis
+  - https://developers.exlibrisgroup.com/esploro/apis
+  - https://developers.exlibrisgroup.com/alma/apis/courses
+  - https://developers.exlibrisgroup.com/rapido/apis/resources
+  - https://developers.exlibrisgroup.com/rapido/apis/users
+  - https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+  - https://developers.exlibrisgroup.com/rapido/apis/partners
+servers:
+- url: https://gateway-hostname
+tags:
+- name: Rapido
+paths:
+  /rapido/v1/lendingRequests/{requestId}:
+    get:
+      operationId: get_rapido_v1_lendingRequests_requestId
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_rapido_v1_lendingRequests_requestId
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_rapido_v1_lendingRequests_requestId
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/partner/test:
+    post:
+      operationId: post_rapido_v1_partner_test
+      tags:
+      - Rapido
+      summary: Test API Path POST Partner Test API
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/partner/{partnerCode}:
+    delete:
+      operationId: delete_rapido_v1_partner_partnerCode
+      tags:
+      - Rapido
+      summary: Remove Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: partnerCode
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_rapido_v1_partner_partnerCode
+      tags:
+      - Rapido
+      summary: Retrieve Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: partnerCode
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_rapido_v1_partner_partnerCode
+      tags:
+      - Rapido
+      summary: Update Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: partnerCode
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/resources/test:
+    get:
+      operationId: get_rapido_v1_resources_test
+      tags:
+      - Rapido
+      summary: Test API
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/resources
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/resources/{recordId}/offers:
+    get:
+      operationId: get_rapido_v1_resources_recordId_offers
+      tags:
+      - Rapido
+      summary: Retrieve Offers
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/resources
+      parameters:
+      - name: recordId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/user/{userId}:
+    delete:
+      operationId: delete_rapido_v1_user_userId
+      tags:
+      - Rapido
+      summary: Delete user
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_rapido_v1_user_userId
+      tags:
+      - Rapido
+      summary: Get user details
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_rapido_v1_user_userId
+      tags:
+      - Rapido
+      summary: Update User Details
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/user/{userId}/resource-sharing-requests:
+    get:
+      operationId: get_rapido_v1_user_userId_resource_sharing_requests
+      tags:
+      - Rapido
+      summary: Retrieve user Rapido resource sharing requests
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_rapido_v1_user_userId_resource_sharing_requests
+      tags:
+      - Rapido
+      summary: Create Rapido resource sharing request for user
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/user/{userId}/resource-sharing-requests/{requestId}:
+    delete:
+      operationId: delete_rapido_v1_user_userId_resource_sharing_requests_requestId
+      tags:
+      - Rapido
+      summary: Cancel user's Rapido resource sharing request
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_rapido_v1_user_userId_resource_sharing_requests_requestId
+      tags:
+      - Rapido
+      summary: Retrieve user's Rapido resource sharing request
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_rapido_v1_user_userId_resource_sharing_requests_requestId
+      tags:
+      - Rapido
+      summary: Operation on Rapido request for resource sharing
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/users
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: requestId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /rapido/v1/{v1id}:
+    get:
+      operationId: get_rapido_v1_v1id
+      tags:
+      - Rapido
+      summary: The lending requests APIs allows performing operations on lending requests
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/lendingrequests
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at v1Id
+    post:
+      operationId: post_rapido_v1_v1id
+      tags:
+      - Rapido
+      summary: Create Partner
+      x-source: https://developers.exlibrisgroup.com/rapido/apis/partners
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at v1Id
