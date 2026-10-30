@@ -64,5 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ex Libris is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and added to the network as a stub for full-pipeline profiling.
-- https://www.exlibrisgroup.com
+Ex Libris provides library software and services for academic, research, and public libraries worldwide. Their portfolio includes Alma, Primo, Leganto, and other platforms that enable resource management, discovery, and digital services. The company focuses on integrated solutions for metadata, analytics, and collaborative networks, serving institutions of all sizes with cloud‑based and on‑premise options.
+
+**Areas:** Library · Software · Academic · Cloud · Solutions
+
+## Ex Libris on APIs.io
+
+Everything profiled for Ex Libris is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ex-libris/](https://apis.io/providers/ex-libris/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Ex Libris Almaws API](https://apis.io/apis/ex-libris/ex-libris-almaws-api/) — The Almaws API from Ex Libris — 12 operation(s) for almaws.
+- [Ex Libris Rapido API](https://apis.io/apis/ex-libris/ex-libris-rapido-api/) — The Rapido API from Ex Libris — 9 operation(s) for rapido.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (1)
+
+The data models the API reads and writes.
+
+- [GetAlmawsVersionResourceNameParametersResponse](https://apis.io/schemas/ex-libris/ex-libris-get-almaws-version-resource-name-parameters-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Ex Libris Context](https://apis.io/jsonld/ex-libris/ex-libris-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Ex Libris API Rules](https://apis.io/rules/ex-libris/ex-libris-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ex Libris Domain Security](https://apis.io/security/ex-libris/ex-libris-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.exlibrisgroup.com)
+- [Documentation](https://developers.exlibrisgroup.com/)
+- [Blog](https://exlibrisgroup.com/blog/)
+- [Security](https://knowledge.exlibrisgroup.com/Cross-Product/Security/GDPR)
+- [Trust centre](https://trust.exlibrisgroup.com/)
+- [Terms of service](https://developers.exlibrisgroup.com/about/terms)
+- [GitHub](https://github.com/ExLibrisGroup)
+- [Status](https://status.exlibrisgroup.com/system_status)
+
+## API Evangelist rating
+
+**Kin Score 26.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 20.4 |
+| Contract governance | 22.0 |
+| Operational transparency | 31.6 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 18.4 |
+
+**Agent readiness 27.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ex-libris/](https://apis.io/providers/ex-libris/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ex Libris: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ex-libris/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
